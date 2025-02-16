@@ -1,0 +1,492 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Share Tech Mono';
+	font-size: 22px; 
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+p {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 14px;
+	line-height: 2;
+	color: #333333;
+}
+
+
+.container {
+	margin: auto;
+	width: 900px;
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+
+/* Nav */
+
+nav {
+	padding: 30px;
+}
+
+.container nav a {
+	padding: 26px; 
+	text-decoration: none;
+	color: #051414;
+}
+
+nav a:hover {
+	color: blue; 
+}
+
+
+.home-page {
+	padding: 1px; 
+}
+
+
+/* Great Idea Logo */
+
+
+/* For Desktop View */
+
+.GI-logo {
+	display: inline;
+}
+
+
+/* For 800px View */
+
+.logo-800 {
+	display: none;
+}
+
+
+/* Header */
+
+
+header {
+	border-bottom: 2px solid black; 
+}
+
+.title-text {
+	margin-top: 70px; 
+	width: 300px;
+	height: 300px; 
+	text-align: center; 
+	
+}
+
+.top-container {
+	display: flex; 
+	margin-left: 76px; 
+	box-sizing: border-box;
+	padding-bottom: 10px; 
+}
+.top-container h1 {
+	font-size: 60px;
+	font-family: 'Share Tech Mono', monospace;
+	color: #44acac;
+}
+
+.coding-image {
+	margin-top: 40px; 
+	margin-left: 104px; 
+	width: 300px;
+	height: 300px; 
+}
+
+.coding-image img {
+	width: 280px;
+	height: 280px; 
+}
+
+
+button {
+	padding: 5px;
+	width: 190px;
+	height: 37px;
+	font-size: 17px;
+	border: 1px solid #235f5f;
+	border-radius: 10px;
+	background-color: #0f4f4f;
+	font-family: 'Share Tech Mono', monospace;
+	color: #e6f9f9;
+	letter-spacing: 1.3px;
+	animation-duration: 2s;
+	animation-name: introbutton;
+	animation-iteration-count: 30;
+}
+
+@keyframes introbutton {
+	from {background-color: #0f4f4f; }
+	to {background-color: #041313; }
+}
+
+
+
+/* Media Queries */
+
+
+
+/* At 800px do this */
+
+@media (max-width: 800px) {
+
+	.container {
+		width: 700px;
+		padding: 0;
+	}
+
+	.home-page {
+		width: 670px; 
+		padding: 0;
+	}
+
+	.container nav {
+		margin: auto; 
+		display: flex;
+		align-items: center; 
+		width: 570px; 
+		padding: 1px; 
+	}
+
+	.container nav a {
+		padding: 20px; 
+		color: gray; 
+	}
+	nav a:hover {
+		color: blue; 
+	}
+
+	.GI-logo {
+		display: none;
+	}
+
+	.logo-800 {
+		display: flex;
+		align-items: center; 
+	}
+
+	.GI-logo-800 {
+		margin: auto; 
+		padding-top: 15px; 
+	}
+
+
+	header {
+		height: 400px; 
+		border-bottom: 2px solid black; 
+	}
+	
+	.top-container { 
+		flex-direction: column; 
+		align-items: center;
+		width: 500px;
+	}
+
+	.title-text {
+		margin: 20px; 
+	}
+
+	.top-container h1 {
+		text-align: center; 
+	}
+	.coding-image {
+		display: none; 
+	}
+	
+	.top-section {
+		width: 687px; 
+		padding: 0;
+	}
+	.middle-img {
+		
+		width: 687px; 
+		padding: 0;
+	}
+	.mid-section {
+		
+		width: 687px; 
+		padding: 0;
+	}
+	contact {
+		width: 687px; 
+		padding: 0;
+	}
+	footer {
+		width: 687px; 
+		padding: 0;
+	}
+
+
+
+
+
+}
+
+
+
+
+
+/* At 500px do this */
+
+@media (max-width: 500px) {
+
+	.container {
+		width: 400px;
+		padding: 0;
+	}
+	.container nav {
+		display: flex; 
+		flex-direction: column;
+		align-items: center; 
+		width: 385px;
+		padding: 10px; 
+		
+	}
+
+	.container nav a {
+		width: 400px; 
+		padding: 40x; 
+		border-bottom: 1px solid gray; 
+		text-align: center; 
+		font-size: 20px; 
+		color: gray; 
+	}
+	nav a:hover {
+		color: blue; 
+	}
+
+	.logo-800 {
+		width: 400px;
+		padding-bottom: 20px;
+		border-bottom: 1px solid gray;
+	}
+
+
+	.home-page {
+		padding: 0;
+	}
+
+	header {
+		height: 790px;
+		border-bottom: 2px solid black; 
+	}
+
+
+	.top-container {
+		margin-top: 26px;
+		flex-direction: column; 
+		align-items: center;
+		width: 220px; 
+	}
+
+	.title-text {
+		text-align: center;
+	}
+
+	.coding-image {
+		display: none; 
+	}
+	.coding-image img {
+		margin: auto; 
+	}
+
+	.top-section { 
+		flex-wrap: wrap;
+		width: 385px;  
+		padding: 0;
+	}
+
+	.middle-img {
+		width: 385px; 
+		padding: 0;
+	}
+	.mid-section {
+		flex-direction: column;
+		align-items: center; 
+		width: 395px;  
+		padding: 0;
+	}
+	contact {
+		width: 385px;   
+		padding: 0;
+	}
+	footer {
+		width: 385px;   
+		padding: 0;
+		}
+	}
+
+
+
+
+/* Section One */
+
+.top-section {
+	display: flex;
+	box-sizing: border-box;
+	padding-top: 20px;
+}
+
+.a-top-box h2 {
+	font-family: 'Share Tech Mono';
+	font-size: 30px; 
+}
+
+.a-top-box {
+	margin: 10px; 
+	width: 400px; 
+	border-radius: 40px; 
+	box-sizing: border-box;
+	padding: 20px; 
+}
+
+.a-top-box p {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 14px;
+	line-height: 2;
+	color: #333333;
+}
+.features {
+	background-color: rgb(234, 237, 198); 
+}
+.about {
+	background-color: rgb(225, 220, 220); 
+}
+
+
+img.middle-img {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+
+
+/* Section 2 */
+
+.mid-section {
+	display: flex;
+	box-sizing: border-box;
+	padding-bottom: 30px; 
+}
+
+.mid-box {
+	margin: 10px; 
+	width: 310px; 
+	border-radius: 40px; 
+	box-sizing: border-box;
+	padding: 20px; 
+}
+
+.mid-box h2 {
+	font-family: 'Share Tech Mono';
+	font-size: 30px;
+	text-align: center;  
+}
+
+.mid-box p {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 14px;
+	line-height: 2;
+	color: #333333;
+}
+
+.services {
+	background: rgb(188, 245, 221); 
+}
+.product {
+	background: rgb(242, 210, 252); 
+}
+.vision {
+	background: rgb(243, 232, 212); 
+}
+
+
+/* Contact Section */
+
+contact {
+	display: block; 
+	box-sizing: border-box;
+	padding-top: 20px;
+	border-top: 1px solid black;
+	text-align: center;
+	color: #333333;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 14px;
+	line-height: 2;
+}
+
+contact h3 {
+	font-family: 'Share Tech Mono';
+	font-size: 30px; 
+}
+
+
+
+/* Footer */
+
+footer {
+	box-sizing: border-box;
+	padding: 50px;
+	text-align: center;
+	line-height: 2;
+	color: #1c6c64;
+	font-family: 'Share Tech Mono';
+	font-size: 19px;
+	text-transform: uppercase;
+}
