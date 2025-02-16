@@ -1,0 +1,1 @@
+This project focuses on building a fully responsive website that adapts seamlessly to different screen sizes and devices. It leverages modern web technologies to ensure a smooth user experience across desktops, tablets, and mobile devices.
